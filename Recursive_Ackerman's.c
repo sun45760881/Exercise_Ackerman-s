@@ -30,9 +30,12 @@ int A(int m, int n)
 
 /*
 
-A(m,n)= n+1 if(m==0)
-		A(m-1,1) else if(n==0)
-		A(m-1,A(m,n-1)) else
+A(m,n)= if(m==0)
+		{n+1};
+		else if(n==0)
+		{A(m-1,1) };
+		else
+		{A(m-1,A(m,n-1)) };
 
 
 */
